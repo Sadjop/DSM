@@ -1,33 +1,28 @@
-# This file is basically a wrapper for the dc.sh script.
-# It is used to make the docker-compose commands easier to use.
-# Basically acting as an alias for the dc.sh script.
-
 all: rebuild
 
-
 down:
-	@./dc.sh down
+	@"./dc.sh" down
 
 log:
-	@./dc.sh log
+	@"./dc.sh" log
 
 purge:
-	@./dc.sh purge
+	@"./dc.sh" purge
 
 rebuild:
-	@./dc.sh rebuild $(filter-out $@,$(MAKECMDGOALS))
+	@"./dc.sh" rebuild $(filter-out $@,$(MAKECMDGOALS))
 
 enter:
-	@./dc.sh enter $(filter-out $@,$(MAKECMDGOALS))
+	@"./dc.sh" enter $(filter-out $@,$(MAKECMDGOALS))
 
 up:
-	@./dc.sh up $(filter-out $@,$(MAKECMDGOALS))
+	@"./dc.sh" up $(filter-out $@,$(MAKECMDGOALS))
 
 lite:
-	@./dc.sh lite $(filter-out $@,$(MAKECMDGOALS))
+	@"./dc.sh" lite $(filter-out $@,$(MAKECMDGOALS))
 
 del:
-	@./dc.sh del $(filter-out $@,$(MAKECMDGOALS))
+	@"./dc.sh" del $(filter-out $@,$(MAKECMDGOALS))
 
 %:
-	@./dc.sh $@
+	@"./dc.sh" $@

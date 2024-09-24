@@ -6,7 +6,7 @@ module.exports = {
 	/**
 	 * Name of the bot 
 	 * @type {string} */
-	name: "InsertNameHereBot",
+	name: "Bot_CaCaleb",
 	/**
 	 * Database option (mongodb, postgresql) https://www.prisma.io/docs/reference/database-reference/connection-urls
 	 * @type {string} */
@@ -22,19 +22,19 @@ module.exports = {
 	/**
 	 * UID for the Admin(s) of the bot  
 	 * @type {string | string[]} */
-	ownerId: process.env.DEVUID || ["AdminID"],
+	ownerId: process.env.DEVUID || ["430760937637806090"],
 	/** 
 	 * Token for bot login
 	 * @type {string} */
-	token: process.env.TOKEN || "",
+	token: process.env.TOKEN || "MTIwMDQ4NjcxNzU2MDQ3MTYxMw.GE2hir.bWc-IpOXP0iodClO2js6AeA0JwkvW_EkXEu9Xc",
 	/** 
 	 * ID of the bot
 	 * @type {string} */
-	clientId: process.env.CLIENTID || "",
+	clientId: process.env.CLIENTID || "1200486717560471613",
 	/** 
 	 * Secret Token for bot login
 	 * @type {string} */
-	clientSecret: process.env.CLIENTSECRET || "",
+	clientSecret: process.env.CLIENTSECRET || "ecJZardimwrY9IGNQmdk9mzsa7SS6HGO",
 
 	/**
 	 * API configuration
@@ -73,9 +73,9 @@ module.exports = {
 	nodes: [
 		{
 			identifier: "DockerNode", // log id string
-			host: "docker.lavalink",
-			port: 2333,
-			password: "youshallnotpass",
+			host: "lava-v3.ajieblogs.eu.org",
+			port: 80,
+			password: "https://dsc.gg/ajidevserver",
 			retryAmount: 15, // for lavalink connection attempts
 			retryDelay: 6000, // Delay between reconnect attempts if connection is lost.
 			secure: false, // if lavalink is running SSL
@@ -138,11 +138,11 @@ module.exports = {
 		status: "online",
 
 		/**
-		 @type {{
+		@type {{
 			name: string,
 			type: import("discord.js").ActivityType,
 			data?: (client: import("./lib/Bot")) => { [key: string]: any }
-		 }[]}
+		}[]}
 		 */
 		activities: [
 			{
@@ -155,7 +155,7 @@ module.exports = {
 				}
 			},
 			{
-				name: "Music",
+				name: "Jehovah",
 				type: "LISTENING",
 			}
 		],
